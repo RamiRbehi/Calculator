@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator app</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<link rel="stylesheet" href="css/styles.css">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+
+  </head>
+  <body>
+
+<div class="container ">
+
+<div class="header d-inline">
+  <h3 class="string d-inline-flex">calc</h3>
+
+  <div class="toggle3-switch">
+    <input type="radio" id="toggle3radio1" class=radio1 name="toggle3" checked />
+    <input type="radio" id="toggle3radio2" class=radio2 name="toggle3" />
+    <input type="radio" id="toggle3radio3" class=radio3 name="toggle3"/>
+    <div class="topLabelContainer string">
+      <label class=labelTop1 for="toggle3radio1" value="1">1</label>
+      <label class=labelTop2 for="toggle3radio2" value="2">2</label>
+      <label class=labelTop3 for="toggle3radio3" value="3">3</label>
+    </div>
+    <span class="labelLeft string">THEME</span>
+    <span class="sliderContainer">
+      <label class="label1" for="toggle3radio1"></label>
+      <label class="label2" for="toggle3radio2"></label>
+      <label class="label3" for="toggle3radio3"></label>
+      <span class="slider"></span>
+    </span>
+</div>
+
+</div>
+
+
+  <input type="text" id="calculator-screen" class="calculator-screen" readonly>
+
+
+  <div class="calculator d-flex">
+
+  <div class="row justify-content-around">
+  <button type="button" value="7" class="number btn btn-light col-2">7</button>
+  <button type="button" value="8" class="number btn btn-light col-2">8</button>
+  <button type="button" value="9" class="number btn btn-light col-2">9</button>
+  <button type="button" value="del" id="del" class="del del btn btn-light col-2">DEL</button>
+  <button type="button" value="4" class="number btn btn-light col-2">4</button>
+  <button type="button" value="5" class="number btn btn-light col-2">5</button>
+  <button type="button" value="6" class="number btn btn-light col-2">6</button>
+  <button type="button" value="+" class="operator btn btn-light col-2">+</button>
+  <button type="button" value="1" class="number btn btn-light col-2">1</button>
+  <button type="button" value="2" class="number btn btn-light col-2">2</button>
+  <button type="button" value="3" class="number btn btn-light col-2">3</button>
+  <button type="button" value="-" class="operator btn btn-light col-2">-</button>
+  <button type="button" value="." class="number btn btn-light col-2">.</button>
+  <button type="button" value="0" class="number btn btn-light col-2">0</button>
+  <button type="button" value="/" class="operator btn btn-light col-2">/</button>
+  <button type="button" value="*" class="operator btn btn-light col-2">*</button>
+  <button type="button" value="reset" id="reset" class="reset reset btn btn-light">RESET</button>
+  <button type="button" value="=" id="equal" class="equal btn btn-light">=</button>
+
+</div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="index.js" charset="utf-8"></script>
+  </body>
+</html>
